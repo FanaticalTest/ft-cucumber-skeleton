@@ -10,7 +10,10 @@ task cucumber() {
 		javaexec {
 			main = "cucumber.api.cli.Main"
 			classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
-			args = ['--plugin', 'pretty', '--glue', 'com.fanaticaltest.ftcucumberskeleton.cucumber', 'src/test/resources']
+			args = ['--plugin', 'pretty',
+					'--plugin', 'html:build/cucumber-html-report',
+					'--plugin', 'json:build/cucumber.json',
+					'--glue', 'com.fanaticaltest.ftcucumberskeleton.cucumber', 'src/test/resources']
 		}
 	}
 }
