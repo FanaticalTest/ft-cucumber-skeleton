@@ -1,3 +1,11 @@
+buildscript {
+	ext {
+		cucumberVersion = '2.1.0'
+		junitVersion= '4.12'
+		factoryVersion = '0.0.1'
+	}
+}
+
 apply plugin: 'java'
 apply plugin: 'idea'
 
@@ -9,7 +17,7 @@ configurations {
 }
 
 group = 'com.fanaticaltest'
-version = '0.0.1'
+version = "${factoryVersion}"
 sourceCompatibility = 1.8
 
 repositories {
@@ -19,9 +27,9 @@ repositories {
 
 
 dependencies {
-	testCompile 'io.cucumber:cucumber-java:2.1.0'
-	testCompile 'io.cucumber:cucumber-junit:2.1.0'
-	testCompile 'junit:junit:4.12'
+	testCompile "io.cucumber:cucumber-java:${cucumberVersion}"
+	testCompile "io.cucumber:cucumber-junit:${cucumberVersion}"
+	testCompile "junit:junit:${junitVersion}"
 }
 
 task cucumber() {
