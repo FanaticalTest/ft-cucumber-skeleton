@@ -1,4 +1,4 @@
-Feature: SmokeTest
+Feature: Calculator - Sum
 
   Scenario: Do a sum of 2 values
     Given the first value is "3"
