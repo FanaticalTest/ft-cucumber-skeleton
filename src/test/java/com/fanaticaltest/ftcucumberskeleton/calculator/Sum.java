@@ -1,7 +1,22 @@
 package com.fanaticaltest.ftcucumberskeleton.calculator;
 
-/**
- * Created by samykacem on 01.12.17.
- */
 public class Sum {
+
+    private int firstIntValue;
+    private int secondIntValue;
+
+    public void setFirstIntValue(int firstIntValue) {
+        this.firstIntValue = firstIntValue;
+    }
+
+    public void setSecondIntValue(int secondIntValue) {
+        this.secondIntValue = secondIntValue;
+    }
+
+    public Sum() {
+    }
+
+    public int calculate() {
+        return this.firstIntValue + this.secondIntValue;
+    }
 }
