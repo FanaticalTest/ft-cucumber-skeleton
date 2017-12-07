@@ -1,5 +1,6 @@
 Feature: Calculator - Sum
 
+  @Id=001
   Scenario: Do a sum of 2 values
     Given the first value is "3"
     And the second value is "4"
