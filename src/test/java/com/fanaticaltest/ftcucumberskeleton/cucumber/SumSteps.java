@@ -1,11 +1,11 @@
 package com.fanaticaltest.ftcucumberskeleton.cucumber;
 
-import com.fanaticaltest.ftcucumberskeleton.calculator.Sum;
+import com.fanaticaltest.ftcucumberskeleton.features.Sum;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
 
-public class SumTest extends Sum {
+public class SumSteps extends Sum {
 
 
     @Given("^the first value is \"([^\"]*)\"$")

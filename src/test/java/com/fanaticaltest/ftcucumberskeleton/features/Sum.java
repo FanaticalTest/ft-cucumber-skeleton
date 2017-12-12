@@ -1,4 +1,4 @@
-package com.fanaticaltest.ftcucumberskeleton.calculator;
+package com.fanaticaltest.ftcucumberskeleton.features;
 
 public class Sum {
 
